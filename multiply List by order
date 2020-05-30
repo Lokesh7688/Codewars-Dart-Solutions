@@ -1,0 +1,38 @@
+
+Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+
+
+Solution:
+
+
+
+
+
+int grow(List<int> arr) {
+  // your code here
+  var mul = 1;
+  for(var e in arr){
+    mul*=e;
+  }
+  
+  or
+  
+  int grow(List<int> arr) {
+  return arr.reduce((a,b) => a * b);
+}
+
+
+
+or
+
+
+int grow(List<int> arr)=>arr.fold(1, (p, e)=>p*e);
+  return mul;
+}
+
+
+
+
