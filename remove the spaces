@@ -1,0 +1,10 @@
+Simple, remove the spaces from the string, then return the resultant string.
+
+
+or
+
+
+Solution:
+
+
+String noSpace(String x) => x.split(' ').join('');
