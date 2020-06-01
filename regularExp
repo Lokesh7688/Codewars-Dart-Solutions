@@ -1,0 +1,29 @@
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, and u as vowels for this Kata.
+
+The input string will only consist of lower case letters and/or spaces.
+
+
+
+
+
+
+Solution:
+
+
+
+import "dart:core";
+
+int getCount(String inputStr){
+  inputStr.toLowerCase();
+  var vowels = 'aeiou';
+  var vowelCount = 0;
+  
+    for(var i = 0; i < inputStr.length; i++) {
+    if (vowels.indexOf(inputStr[i]) != -1) {
+      vowelCount++;
+    }
+  }
+  return vowelCount;
+}
